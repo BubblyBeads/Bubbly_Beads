@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bubbly Beads</title>
+  <style>
+    body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #ffe6f0; color: #333; }
+    header, footer { background-color: #ffb3d9; padding: 1em; text-align: center; }
+    nav a { margin: 0 1em; color: white; text-decoration: none; font-weight: bold; }
+    h1, h2 { color: #cc0066; }
+    .logo img { width: 150px; }
+    .section { padding: 2em; max-width: 1000px; margin: auto; }
+    .products img { width: 200px; height: auto; border-radius: 10px; }
+    .product-item { margin: 1em 0; padding: 1em; border: 1px solid #ccc; border-radius: 10px; background: #fff; }
+    .order-form { background: #fff; padding: 1em; border-radius: 10px; }
+    input, textarea { width: 100%; margin: 0.5em 0; padding: 0.5em; border-radius: 5px; border: 1px solid #ccc; }
+    button { padding: 0.7em 1.5em; background-color: #ff66b2; color: white; border: none; border-radius: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://th.bing.com/th/id/OIG1.6UAFoihRn6H1lmYvi.us?cb=iwc1" alt="Bubbly Beads Logo">
+    </div>
+    <h1>Bubbly Beads</h1>
+    <p>Shimmering Style, Personalized Just for You!</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#products">Shop</a>
+      <a href="#order">Order</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>Welcome to Bubbly Beads – where every bracelet is handmade with love and your personal style in mind. I started this business to bring a little sparkle into people's lives and to give others the opportunity to wear jewelry that reflects who they truly are. Each bracelet is crafted with quality glass beads and endless charm potential. We believe in creativity, individuality, and fun!</p>
+  </section>
+
+  <section id="products" class="section">
+    <h2>Our Bracelets</h2>
+    <p>Select a style below. Charms are optional and can be customized at your request.</p>
+
+    <div class="products">
+      <div class="product-item">
+        <img src="https://i.pinimg.com/474x/bc/6c/15/bc6c15afe1a5cb67651bad223e6a315a.jpg" alt="Starry Shore">
+        <h3>Starry Shore - $7</h3>
+      </div>
+      <div class="product-item">
+        <img src="https://i.pinimg.com/474x/aa/c9/65/aac9653ceb221c0b52baf14b325da8ab.jpg" alt="Pearl Coast">
+        <h3>Pearl Coast - $7</h3>
+      </div>
+      <div class="product-item">
+        <img src="https://i.pinimg.com/474x/c4/1c/f4/c41cf4a60edef9840b30d8011438414c.jpg" alt="Bubble Tide">
+        <h3>Bubble Tide - $6</h3>
+      </div>
+      <div class="product-item">
+        <img src="https://i.pinimg.com/736x/d3/81/7b/d3817b52979be70540f1b78dd2a58b2b.jpg" alt="Coral Breeze">
+        <h3>Coral Breeze - $10 (Includes matching filler bracelet)</h3>
+      </div>
+      <div class="product-item">
+        <img src="https://i.pinimg.com/736x/96/ce/1e/96ce1e631a4f2ce76653134f38699fd4.jpg" alt="Tidal Gleam">
+        <h3>Tidal Gleam - $6</h3>
+      </div>
+      <div class="product-item">
+        <img src="https://i.pinimg.com/736x/93/16/d8/9316d834d67f6d01229998da8fa011e5.jpg" alt="Dream Orbit">
+        <h3>Dream Orbit - $6</h3>
+      </div>
+      <div class="product-item">
+        <img src="https://i.pinimg.com/736x/65/59/8a/65598ab1f42b52582601ff2d6383af8e.jpg" alt="Wishing Star">
+        <h3>Wishing Star - $7</h3>
+      </div>
+      <div class="product-item">
+        <img src="https://i.pinimg.com/736x/4f/b3/42/4fb342d64e0ad709ad37031943b5541e.jpg" alt="Celestial">
+        <h3>Celestial - $6</h3>
+      </div>
+      <div class="product-item">
+        <img src="https://i.pinimg.com/474x/68/18/77/681877f3d2cd54bd44391b7bff141f5d.jpg" alt="Bubble Babe">
+        <h3>Bubble Babe - $7</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="description" class="section">
+    <h2>Customization Info</h2>
+    <p>Choose from any of our bracelet styles and feel free to personalize it! Use the order form below to request specific bead colors, add charms, or even submit your own unique bracelet design. Charms are not included by default—please request what kind of charms you want so we can personally source them for you. Creativity is encouraged!</p>
+  </section>
+
+  <section id="order" class="section">
+    <h2>Order Your Bracelet</h2>
+    <form class="order-form" action="mailto:beshliman@scholars.oneschool.net" method="POST" enctype="text/plain">
+      <label>Your Email:</label>
+      <input type="email" name="email" required />
+      
+      <label>Bracelet Style:</label>
+      <input type="text" name="bracelet-style" required />
+
+      <label>Color Preferences:</label>
+      <textarea name="color-preferences"></textarea>
+
+      <label>Charm Request:</label>
+      <textarea name="charm-request"></textarea>
+
+      <label>Personal Comments or Questions:</label>
+      <textarea name="comments"></textarea>
+
+      <label>Upload Reference Photo:</label>
+      <input type="file" name="photo" accept="image/*" />
+
+      <p><strong>Payment Info:</strong> Payment is due after order approval. Options: Apple Pay or Cash (in person).</p>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:beshliman@scholars.oneschool.net">beshliman@scholars.oneschool.net</a></p>
+    <p>Instagram: <a href="https://instagram.com/bubblyb3ads">@bubblyb3ads</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bubbly Beads. Made with love.</p>
+  </footer>
+</body>
+</html>
